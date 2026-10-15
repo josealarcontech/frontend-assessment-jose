@@ -8,4 +8,4 @@ const requireEnv = (name: string): string => {
   return value
 }
 
-export const PROCESSOR_WEBHOOK_SECRET = requireEnv("PROCESSOR_WEBHOOK_SECRET")
+export const getProcessorWebhookSecret = (): string => requireEnv("PROCESSOR_WEBHOOK_SECRET")
